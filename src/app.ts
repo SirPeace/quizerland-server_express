@@ -7,5 +7,5 @@ const app = express()
 const port = config.get('port')
 
 app.listen(port, () =>
-	console.log(`Приложение запущено на http://localhost:${port}`),
+  console.log(`Сервер запущен на http://localhost:${port}`),
 )

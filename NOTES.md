@@ -19,3 +19,7 @@ npm i express
 
 npm i mongoose @typegoose/typegoose config argon2 pino dayjs nanoid nodemailer
 lodash jsonwebtoken dotenv zod
+
+## Install Prettier
+
+npm install --save-dev --save-exact prettier
