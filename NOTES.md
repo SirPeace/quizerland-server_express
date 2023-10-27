@@ -26,8 +26,13 @@ npm install --save-dev --save-exact prettier
 
 ## Description
 
-pino - форматирования ( log ) в процессе разработки, подсветка события.
+pino - форматирование ( log ) в процессе разработки, подсветка события.
+
 dayjs - минималистичная JavaScript-библиотека, которая анализирует, проверяет, манипулирует и отображает даты и время в современных браузерах с помощью API
+
+nanoId - удобный для работы с URL генератор уникальных строковых идентификаторов на JavaScript.
+
+argon2 — новейший алгоритм среди них и в настоящее время считается самым надежным из доступных алгоритмов хеширования паролей. Bcrypt — более старый алгоритм, но он до сих пор широко используется и считается безопасным.
 
 ## Docker:
 
@@ -36,3 +41,8 @@ $ docker images
 $ docker run --name quizerland-server -p 27017:27017 -d mongo:7.0-rc
 
 ( quizerland-server ) крутится в docker
+
+Проверка подключения
+
+$ curl http://localhost:3000
+Ответ - curl: (7) Failed to connect to localhost port 3000 after 2254 ms: Couldn't connect to server
