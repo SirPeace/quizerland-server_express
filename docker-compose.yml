@@ -1,0 +1,23 @@
+version: '3'
+services:
+  app:
+    build: .
+    container_name: quizerland-node
+    depends_on:
+      - mongo
+    env_file:
+      - .env
+    ports:
+      - ${APP_PORT}:8000
+    volumes:
+      - .:/app
+    command: ['npm', 'run', 'dev']
+  mongo:
+    image: mongo:7.0-rc
+    container_name: quizerland-mongo
+    restart: always
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: ${MONGO_INITDB_ROOT_USERNAME}
+      MONGO_INITDB_ROOT_PASSWORD: ${MONGO_INITDB_ROOT_PASSWORD}
+    volumes:
+      - /data/db

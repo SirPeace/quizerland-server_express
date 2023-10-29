@@ -36,9 +36,11 @@ argon2 — новейший алгоритм среди них и в насто�
 
 ## Docker:
 
+```bash
 $ docker pull mongo:7.0-rc
 $ docker images
 $ docker run --name quizerland-server -p 27017:27017 -d mongo:7.0-rc
+```
 
 ( quizerland-server ) крутится в docker
 

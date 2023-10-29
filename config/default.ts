@@ -1,5 +1,5 @@
 export default {
-  port: 3000,
-  dbUri: 'mongodb://localhost:27017/quizerland-server',
+  port: process.env.APP_PORT ?? 8000,
+  dbUri: 'mongo',
   logLevel: 'info',
 }
